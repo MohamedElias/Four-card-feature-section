@@ -27,5 +27,53 @@ p{
    color: #b7b9bc;
    font-family: 'Montserrat', sans-serif;
    font-size: 2.0rem;
+
+}
+.text-container p{
    text-align: center;
+}
+.card{
+   position: relative;
+   height: 30rem;
+   padding: 3rem;
+   margin-block: 4rem;
+   box-shadow: 0px 10px 20px #d7e1ee;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+.card:first-child{
+   border-top: solid 10px #46d2d1;
+   grid-area: Supervisor;
+}
+.card:nth-child(2){
+   border-top: solid 10px #eb5454;
+   grid-area:TeamBuilder ;
+}
+.card:nth-child(3){
+   border-top: solid 10px #fcae4b;
+   grid-area: Karma;
+}
+.card:nth-child(4){
+   border-top: solid 10px #529ef1;
+   grid-area: Calculator;
+}
+.card img{
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+   margin: 3rem;
+
+}
+@media (min-width: 1025px) {
+   .cards-container{
+      display: grid;
+      grid-template-areas: 'Supervisor TeamBuilder Calculator'
+      'Supervisor Karma Calculator';
+      align-items: center;
+      gap: 3rem;
+   }
+
 }
