@@ -46,19 +46,19 @@ p{
 }
 .card:first-child{
    border-top: solid 10px #46d2d1;
-   grid-area: Supervisor;
+   grid-row: 1 / 3;
 }
 .card:nth-child(2){
    border-top: solid 10px #eb5454;
-   grid-area:TeamBuilder ;
+   grid-row: 1 / 2;
 }
 .card:nth-child(3){
    border-top: solid 10px #fcae4b;
-   grid-area: Karma;
+   grid-row: 2 / 3;
 }
 .card:nth-child(4){
    border-top: solid 10px #529ef1;
-   grid-area: Calculator;
+   grid-row: 1 / 3;
 }
 .card img{
    position: absolute;
@@ -70,8 +70,8 @@ p{
 @media (min-width: 1025px) {
    .cards-container{
       display: grid;
-      grid-template-areas: 'Supervisor TeamBuilder Calculator'
-      'Supervisor Karma Calculator';
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
       align-items: center;
       gap: 3rem;
    }
